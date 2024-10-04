@@ -1,0 +1,48 @@
+
+Cargo: $50,000 per single conveyance, $100,000 per occurrence, $1,000 deductible ($2,000 military deductible).
+Cargo: $250,000 per single conveyance, $500,000 per occurrence, $2,500 deductible.
+
+Warehouse Legal: Loc #1 $50,000, $900 deductible ($2,000 military deductible).
+Warehouse Legal: Loc #3 $200,000, $1,000 deductible.
+Loc #3 $1,600,203, $2,500 deductible;
+Warehouse Legal: Loc #1 $3,400,000, $2,500 deductible; Loc #2 $100,000, $2,500 deductible.
+Warehouse Legal: Loc #1 $750,000, $1,000 deductible ($2,000 military deductible); Loc #3 $500,000, $2,500 deductible ($3,000 military deductible).
+
+Warehouse Legal: Loc #2 Bldg #2 $2,000,000, $1,000 deductible ($2,000 military deductible); Loc #2 Bldg #1 $300,000, $1,000 deductible ($2,000 military deductible).
+
+Misc Moving Equipment: $81,000, Forklifts Included, $750 deductible.
+Misc Moving Equipment: $9,500, Forklifts: $14,750, $2,750 deductible.
+
+
+Issuing Companies of All Lines:
+PKG: XXXXXX
+TRK: XXXXXX
+UMB: XXXXXX
+5)
+List policy numbers for all lines
+(a)
+See page one
+of each quote for policy number, list on binder like below:
+Policy Numbers:
+PKG
+: XXXXXXXX
+TRK
+: XXXXXXXX
+UMB: XXXXXXXX
+
+PREM. NO. 1 BLDG. NO. 1
+BUILDING
+
+BUSINESS PERSONAL PROPERTY
+
+BUSINESS INCOME
+
+ACTUAL CASH VALUE
+
+
+
+Gaju5237
+
+1/3=33%
+1/6=17%
+
