@@ -1,3 +1,8 @@
+// Initialize Ace Editor
+const editor = ace.edit("editor");
+editor.setTheme("ace/theme/monokai");
+editor.session.setMode("ace/mode/java");
+
 async function compileCode() {
     const code = editor.getValue();
     const outputElement = document.getElementById('output');
@@ -8,7 +13,7 @@ async function compileCode() {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                'X-RapidAPI-Key': '9576f4c951mshc522115a1c1304ep115810jsna27b8579699b', // Replace with your API key
+                'X-RapidAPI-Key': '9576f4c951mshc522115a1c1304ep115810jsna27b8579699b', // Replace with your actual API key
                 'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
             },
             body: JSON.stringify({
@@ -24,7 +29,7 @@ async function compileCode() {
             const resultResponse = await fetch(`https://judge0-ce.p.rapidapi.com/submissions/${token}`, {
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': '9576f4c951mshc522115a1c1304ep115810jsna27b8579699b', // Replace with your API key
+                    'X-RapidAPI-Key': '9576f4c951mshc522115a1c1304ep115810jsna27b8579699b', // Replace with your actual API key
                     'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
                 }
             });
@@ -46,8 +51,3 @@ async function compileCode() {
         console.error(error);
     }
 }
-
-// Initialize Ace Editor
-const editor = ace.edit("editor");
-editor.setTheme("ace/theme/monokai");
-editor.session.setMode("ace/mode/java");
