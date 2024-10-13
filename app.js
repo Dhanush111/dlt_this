@@ -30,13 +30,15 @@ async function compileCode() {
             });
             const result = await resultResponse.json();
             
-            // Check for errors
-            if (result.stderr) {
-                outputElement.textContent = `Error: \n${result.stderr}`;
-            } else if (result.compile_output) {
+            // Display the results based on the API response.
+            if (result.compile_output) {
                 outputElement.textContent = `Compilation Error: \n${result.compile_output}`;
+            } else if (result.stderr) {
+                outputElement.textContent = `Runtime Error: \n${result.stderr}`;
+            } else if (result.stdout) {
+                outputElement.textContent = `Output: \n${result.stdout}`;
             } else {
-                outputElement.textContent = result.stdout || "No output.";
+                outputElement.textContent = "No output or errors detected.";
             }
         }, 3000); // Wait for 3 seconds for compilation
     } catch (error) {
