@@ -1,14 +1,3 @@
-// Initialize Ace Editor
-const editor = ace.edit("editor");
-editor.setTheme("ace/theme/monokai");
-editor.session.setMode("ace/mode/java");
-editor.setValue(`public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}`);
-
-// Compile Code function
 async function compileCode() {
     const code = editor.getValue();
     const outputElement = document.getElementById('output');
@@ -40,10 +29,18 @@ async function compileCode() {
                 }
             });
             const result = await resultResponse.json();
-            outputElement.textContent = result.stdout || result.stderr || "No output.";
+            
+            // Check for errors
+            if (result.stderr) {
+                outputElement.textContent = `Error: \n${result.stderr}`;
+            } else if (result.compile_output) {
+                outputElement.textContent = `Compilation Error: \n${result.compile_output}`;
+            } else {
+                outputElement.textContent = result.stdout || "No output.";
+            }
         }, 3000); // Wait for 3 seconds for compilation
     } catch (error) {
-        outputElement.textContent = "Error compiling the code.";
+        outputElement.textContent = "Error connecting to the API.";
         console.error(error);
     }
 }
