@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Code Editor and Compiler</title>
+    <title>Java Code Compiler</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <h1>Java Code Compiler</h1>
-    <div id="editor"></div>
-    <button onclick="compileCode()">Run Code</button>
-    <pre id="output"></pre>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <h1>Java Compiler</h1>
+    <div id="editor">public class Main { public static void main(String[] args) { System.out.println("Hello, World!"); } }</div>
+    <button onclick="compileCode()">Compile</button>
+    <div id="output"></div>
+
     <script src="app.js"></script>
 </body>
 </html>
